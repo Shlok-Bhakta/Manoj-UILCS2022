@@ -28,7 +28,7 @@ public class App {
 
             if(inType.equals("F")){
                 if(outType.equals("M")){
-                    output = (toConvert-(freezing-32D)/(180D/boiling));
+                    output = (toConvert-32D)*((freezing/boiling)/180D)-freezing;
                 }
                 if(outType.equals("C")){
                     output = (toConvert-32)*(5D/9D);
